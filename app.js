@@ -12,6 +12,8 @@ app.all('/', function(req, res, next) {
  */
  });
 
+app.get('/',trip.getTripInfo);
+
 app.get('/addPunch', trip.addPunch);
 app.get('/addSticker', trip.addSticker);
 app.get('/addPhoto', trip.addPhoto);
